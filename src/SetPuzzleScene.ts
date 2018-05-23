@@ -13,12 +13,15 @@
 			return ;
 		}
 		Status.mode = 0;
+		/**存放区域***/
 		_self__.addChild(this.field = new Field(param1));
+		/**关卡标题**/
 		var _loc2_:BitmapDisplay = new BitmapDisplay(60,10);
 		_loc2_.x = 5;
 		_loc2_.y = 20;
 		_loc2_.drawString("stage " + param1.stageNo);
 		_self__.addChild(_loc2_);
+		/**撤销**/
 		this.undoBmd = new BitmapDisplay(22,22);
 		this.undoBmd.copy(Resource.chip,0,220,22,22,0,0);
 		this.undoBmd.setScale(2);
@@ -26,6 +29,7 @@
 		this.undoBmd.x = 146;
 		this.undoBmd.y = 290;
 		_self__.addChild(this.undoBmd);
+		/***主菜单*/
 		_loc3_ = new BitmapDisplay(22,22);
 		_loc3_.copy(Resource.chip,22,220,22,22,0,0);
 		_loc3_.setScale(2);
@@ -33,7 +37,9 @@
 		_loc3_.x = 50;
 		_loc3_.y = 290;
 		_self__.addChild(_loc3_);
+
 		_self__.addChild(BlockManager);
+		
 		_self__.addChild(this.hudManager = new HudManagerScore());
 		_self__.addChild(EffectManager);
 		if(BlockManager.vecInventoryBlock[1] == null)
