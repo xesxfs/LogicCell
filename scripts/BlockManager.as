@@ -59,7 +59,7 @@ class BlockManagerClass extends Sprite
       this.vecBlock.push(param1);
       addChild(param1);
    }
-   
+    /**增加移动砖块清单**/
    public function addInventoryBlock(param1:Block, param2:int) : void
    {
       while(this.vecInventoryBlock.length < param2)
@@ -273,6 +273,7 @@ class BlockManagerClass extends Sprite
             _loc7_.vecLayer.push(int(_loc6_.charAt(_loc4_)));
             _loc4_++;
          }
+         /**可移动砖块**/
          if(_loc8_ == 9)
          {
             this.addInventoryBlock(_loc7_,_loc9_);

@@ -60,6 +60,7 @@ package
          {
             BlockManager.inventoryPadding = 24;
          }
+         /**调整存货砖块位置**/
          BlockManager.adjustInventoryPosition();
          InputSetPuzzle.inventoryPadding = BlockManager.inventoryPadding;
          InputSetPuzzle.field = this.field;

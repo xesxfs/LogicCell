@@ -11,16 +11,13 @@
 		_self__.addEventListener(egret.TouchEvent.TOUCH_RELEASE_OUTSIDE,flash.bind(this.mouseOutEvent,this),null);
 	}
 
-	protected mouseDownEvent(param1:flash.MouseEvent)
-	{
+	protected mouseDownEvent(param1:flash.MouseEvent){
 	}
 
-	protected mouseUpEvent(param1:flash.MouseEvent)
-	{
+	protected mouseUpEvent(param1:flash.MouseEvent){
 	}
 
-	protected mouseOutEvent(param1:flash.MouseEvent)
-	{
+	protected mouseOutEvent(param1:flash.MouseEvent){
 	}
 
 }
